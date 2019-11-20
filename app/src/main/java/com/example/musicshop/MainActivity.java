@@ -4,7 +4,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -74,23 +73,6 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         TextView  price = findViewById(R.id.priceCountTextView);
 
         price.setText(""+(qyt*selectPrice));
-
-        ImageView image = findViewById(R.id.goodsImage);
-        switch (selectname)
-        {
-            case "airpods":
-                image.setImageResource(R.drawable.airpods);
-                break;
-            case "airdost":
-                image.setImageResource(R.drawable.airdots);
-                break;
-            case "earpods":
-                image.setImageResource(R.drawable.earpods);
-                break;
-             default:
-                 image.setImageResource(R.drawable.airpods);
-                 break;
-        }
     }
 
     @Override
